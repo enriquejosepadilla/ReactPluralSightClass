@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "description": "Starter App for React and Redux",
   "scripts": {
-    "prestart":"babel-node tools/startMessage.js",
+    "prestart": "babel-node tools/startMessage.js",
     "start": "npm-run-all --parallel open:src lint:watch test:watch",
     "open:src": "babel-node tools/srcServer.js",
     "lint": "node_modules/.bin/esw webpack.config.* src tools",
     "lint:watch": "npm run lint -- --watch",
-    "test" : "mocha --reporter progress tools/testSetup.js \"src/**/*.test.js\"",
+    "test": "mocha --reporter progress tools/testSetup.js \"src/**/*.test.js\"",
     "test:watch": "npm run test -- --watch"
   },
   "dependencies": {
@@ -18,7 +18,7 @@
     "react": "15.0.2",
     "react-dom": "15.0.2",
     "react-redux": "4.4.5",
-    "react-router": "2.4.0",
+    "react-router": "^4.0.0-alpha.5",
     "react-router-redux": "4.0.4",
     "redux": "3.5.2",
     "redux-thunk": "2.0.1",
